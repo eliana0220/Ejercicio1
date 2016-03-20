@@ -63,6 +63,12 @@ p{
 	padding-bottom:1em;
 }
 
+p2{
+	line-height:1.5em;
+	padding-bottom:1em;
+	margin:20px;
+}
+
 .line{
 	/* The dividing line: */
 	height:1px;

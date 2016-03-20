@@ -38,7 +38,7 @@
                 <div class="nav clear"> <!-- The nav link semantically marks your main site navigation -->
                     <ul>
                         <li><a href="#article1">Datos Personales</a></li>
-                        <li><a href="#article2">Conocimientos</a></li>
+                        <li><a href="#article2">Intereses</a></li>
                         <li><a href="#article3">Crea tu usuario</a></li>
                     </ul>
                 </div>
@@ -52,7 +52,7 @@
                 <div class="line"></div>  <!-- Dividing line -->
                 
                 <div class="article" id="article1"> <!-- The new article tag. The id is supplied so it can be scrolled into view. -->
-                    <h2>Registrarse</h2>
+                    <h2>Datos Personales</h2>
                     
                     <div class="line"></div>
                     
@@ -65,61 +65,26 @@
                         Nombre: <input type="text" name="fname"><br><br>
                         Apellido: <input type="text" name="lname"><br>
 
-                        <br>Sexo
-                        <input type="radio" name="gender" value="male"> Masculino
+                        <br>Sexo 
+                        <p2>        
+                        <input type="radio" name="gender" value="male" > Masculino
                         <input type="radio" name="gender" value="female"> Femenino<br>
+                        </p2>
 
                         <br>DNI
+                        <p2>
                         <input type="number" name="dni"><br>
+                        </p2>
 
-                        <br>Teléfono <input type="number" name="tel"><br>
-                        <br>Celular <input type="number" name="cel"><br>
+                        <br>Teléfono 
+                        <p2><input type="number" name="tel"><br></p2>
+                        <br>Celular 
+                        <p2><input type="number" name="cel"><br></p2>
 
-                        <br>Dirección
-                        <br>Calle <input type="text" name="calle"><br>
-                        <br>Número <input type="number" name="número"><br>
+                        <br>Dirección<br>
+                        <br>Calle <input type="text" name="calle">
+                        Número <input type="text" name="número"  maxlength="4" size="4"><br>
                         <br>Localidad <input type="text" name="loc"><br>
-
-                        <br>Tecnicatura elegida <select>
-                          <option value="Prog">Tecnicatura en Programación</option>
-                          <option value="Inf">Tecnicatura en Sistemas Informáticos</option>
-                          <option value="Redes">Tecnicatura en Redes</option>
-                        </select>
-
-
-                        <br><br>
-
-                        Lenguajes<br>
-                        <input type="checkbox" name="HTML" value="HTML"> HTML<br>
-                        <input type="checkbox" name="JAVA" value="JAVA"> JAVA<br>
-                        <input type="checkbox" name="PHP" value="PHP"> PHP<br>
-                        <input type="checkbox" name="PHYTON" value="PHYTON"> PHYTON<br>
-
-                        <br><br>
-                        <br><br>
-
-                        <br><br>
-
-                        E-mail:
-                        <input type="email" name="email">
-
-                        <br><br>
-
-                        Agrega tu página web:
-                        <input type="url" name="homepage">
-
-                        <br><br>
-
-                        <br>USUARIO:<br>
-                          <input type="text" name="username"><br>
-                        <br>CONTRASEÑA:<br>
-                          <input type="password" name="psw">
-                        <br><br>CONFIRMA TU CONTRASEÑA:<br>
-                          <input type="password" name="pswconf">
-
-                        <br><br><input type="button" onclick="alert('Borrar')" value="Borrar">
-                        
-                        <br><br><input type="submit" value="Submit"><br>
 
             
                     </div>
@@ -133,7 +98,7 @@
                 <div class="line"></div>
                 
                 <div class="article" id="article2">
-                    <h2>Sweet AJAX Tabs</h2>
+                    <h2>Intereses</h2>
                     
                     <div class="line"></div>
                     
@@ -141,9 +106,40 @@
                     	<div class="figure">
 	                    	<a href="http://tutorialzine.com/2010/01/sweet-tabs-jquery-ajax-css/"><img src="http://tutorialzine.com/img/featured/633.jpg" width="620" height="340" alt="Image two"></a>
                         </div>
+
+                        <br>Tecnicatura elegida <select>
+                          <option value="Prog">Tecnicatura en Programación</option>
+                          <option value="Inf">Tecnicatura en Sistemas Informáticos</option>
+                          <option value="Redes">Tecnicatura en Redes</option>
+                        </select><br>
+
                         
-                        <p>Here we are making sweet AJAX-powered tabs with CSS3 and the newly released version 1.4 of jQuery.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. Duis felis dui, vulputate nec adipiscing nec, interdum vel tortor. Sed gravida, erat nec rutrum tincidunt, metus mauris imperdiet nunc, et elementum tortor nunc at eros. Donec malesuada congue molestie. Suspendisse potenti. Vestibulum cursus congue sem et feugiat. Morbi quis elit odio. </p>
+                        <br>Lenguajes<br>
+                        <input type="checkbox" name="HTML" value="lenguaje"> HTML<br>
+                        <input type="checkbox" name="JAVA" value="lenguaje"> JAVA<br>
+                        <input type="checkbox" name="PHP" value="lenguaje"> PHP<br>
+                        <input type="checkbox" name="PHYTON" value="lenguaje"> PHYTON<br>
+
+                        <br><br>
+
+                        Intereses<br>
+                        <input type="checkbox" name="pasantia" value="intereses"> Pasantía<br>
+                        <input type="checkbox" name="empleo" value="intereses"> Ofertas de Empleo<br>
+                        <input type="checkbox" name="cursos" value="intereses"> Cursos<br>
+                        <input type="checkbox" name="eventos" value="intereses"> Eventos<br>
+                        <input type="checkbox" name="noticias" value="intereses"> Noticias<br>
+                        <br><br>
+
+                        E-mail:
+                        <br><input type="email" name="email">
+
+                        <br><br>
+
+                        Agrega tu página web:
+                        <br><input type="url" name="homepage"><br>
+
+                        <br>¿Quieres recibir información en tu correo?
+                         <input type="checkbox" name="send_info" value="send_info"> <br>
                     </div>
                 </div>
                 
@@ -154,7 +150,7 @@
                 <div class="line"></div>
                 
                 <div class="article" id="article3">
-                    <h2>Halftone Navigation Menu</h2>
+                    <h2>Crea tu Usuario</h2>
                     
                     <div class="line"></div>
                     
@@ -163,8 +159,17 @@
 	                    	<a href="http://tutorialzine.com/2010/01/halftone-navigation-menu-jquery-css/"><img src="http://tutorialzine.com/img/featured/610.jpg" width="620" height="340" alt="Image three"></a>
                         </div>
                         
-                        <p>Today we are making a CSS3 &amp; jQuery halftone-style navigation menu, which will allow you to display animated halftone-style shapes in accordance with the navigation links, and will provide a simple editor for creating additional shapes as well.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer luctus quam quis nibh fringilla sit amet consectetur lectus malesuada. Sed nec libero erat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc mi nisi, rhoncus ut vestibulum ac, sollicitudin quis lorem. Duis felis dui, vulputate nec adipiscing nec, interdum vel tortor. Sed gravida, erat nec rutrum tincidunt, metus mauris imperdiet nunc, et elementum tortor nunc at eros. Donec malesuada congue molestie. Suspendisse potenti. Vestibulum cursus congue sem et feugiat. Morbi quis elit odio. </p>
+                        
+                        <br>USUARIO:<br>
+                          <input type="text" name="username"><br>
+                        <br>CONTRASEÑA:<br>
+                          <input type="password" name="psw">
+                        <br><br>CONFIRMA TU CONTRASEÑA:<br>
+                          <input type="password" name="pswconf">
+
+                        <br><br><input type="button" onclick="alert('Borrar')" value="Borrar">
+                        
+                        <br><br><input type="submit" value="Submit"><br>
                     </div>
                 </div>
                 
